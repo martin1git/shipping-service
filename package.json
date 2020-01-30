@@ -1,34 +1,30 @@
 {
-  "name": "shipping-service",
+  "name": "shipping-service-js",
   "version": "1.0.0",
-  "description": "Cloud Native Bootcamp",
-  "main": "index.js",
+  "description": "Lab2 app",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest tests --env=node",
+    "start": "node src/app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/martin1git/shipping-service.git"
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.x"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Ramunas Pikcius",
   "license": "ISC",
   "jest": {
     "testEnvironment": "node"
   },
-  "bugs": {
-    "url": "https://github.com/martin1git/shipping-service/issues"
-  },
-  "homepage": "https://github.com/martin1git/shipping-service#readme",
-  "devDependencies": {
-    "nock": "^11.7.2",
-    "sinon": "^8.1.1"
-  },
   "dependencies": {
-    "axios": "^0.19.2",
-    "express": "^4.17.1"
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
   },
-  "directories": {
-    "test": "tests"
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "nock": "^10.0.6",
+    "sinon": "^7.2.2"
   }
 }
+
+
